@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stats renders properly 1`] = `
+<div>
+  <div>
+    <h1
+      class="my-3"
+    >
+      Stats
+    </h1>
+    <div
+      class="d-flex justify-content-between"
+    >
+      <p>
+        <small>
+          Lorem ipsum
+        </small>
+      </p>
+      <ul
+        class="mt-3 pagination"
+      >
+        <li
+          class="page-item disabled"
+        >
+          <span
+            class="page-link"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ‹
+            </span>
+            <span
+              class="visually-hidden"
+            >
+              Previous
+            </span>
+          </span>
+        </li>
+        <li
+          class="page-item disabled"
+        >
+          <span
+            class="page-link"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ›
+            </span>
+            <span
+              class="visually-hidden"
+            >
+              Next
+            </span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="table-responsive"
+    >
+      <table
+        class="table table-hover"
+      >
+        <thead>
+          <tr>
+            <th />
+            <th>
+              Ast
+            </th>
+            <th>
+              Blk
+            </th>
+            <th>
+              Pts
+            </th>
+            <th>
+              Reb
+            </th>
+            <th>
+              Stl
+            </th>
+            <th>
+              Turnover
+            </th>
+            <th>
+              Min
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
+  </div>
+</div>
+`;

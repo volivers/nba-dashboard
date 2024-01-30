@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Roster renders properly 1`] = `
+<div>
+  <div>
+    <h1
+      class="my-3"
+    >
+      Team Players
+    </h1>
+    <p
+      class="mb-4"
+    >
+      <small>
+        Pick a player to view the stats.
+      </small>
+    </p>
+    <div
+      class="mb-5 dropdown"
+    >
+      <button
+        aria-expanded="false"
+        class="dropdown-toggle btn btn-dark"
+        id="react-aria-:r0:"
+        type="button"
+      >
+        Select player
+      </button>
+    </div>
+  </div>
+</div>
+`;

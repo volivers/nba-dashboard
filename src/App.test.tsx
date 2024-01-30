@@ -1,9 +1,20 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('./components/Header/Header', () => () => <div>Header</div>);
+
+jest.mock('./components/Dashboard/Dashboard', () => () => <div>Dashboard</div>);
+
+describe('App', () => {
+  it('renders the header', () => {
+    render(<App />);
+
+    expect(screen.getByText(/Header/)).toBeInTheDocument();
+  });
+
+  it('renders the dashboard', () => {
+    render(<App />);
+
+    expect(screen.getByText(/Dashboard/)).toBeInTheDocument();
+  });
 });

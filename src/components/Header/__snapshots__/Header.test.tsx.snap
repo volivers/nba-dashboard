@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders properly 1`] = `
+<div>
+  <nav
+    class="bg-body-tertiary mb-3 p-3 navbar navbar-light bg-dark sticky-top"
+    data-bs-theme="dark"
+  >
+    <div
+      class="container-fluid"
+    >
+      <span
+        class="navbar-brand"
+      >
+        <img
+          alt="nba-logo"
+          loading="lazy"
+          src="img/NBA.svg"
+        />
+      </span>
+      <h1
+        class="p-0 navbar-text"
+      >
+        <img
+          alt="undefined-logo"
+          class="mx-2"
+          height="40"
+          loading="lazy"
+          src="img/undefined.svg"
+        />
+      </h1>
+      <button
+        aria-label="Toggle navigation"
+        class="border-0 navbar-toggler collapsed"
+        type="button"
+      >
+        <span
+          class="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-label="offcanvasNavbarLabel"
+        bg="dark"
+        class="offcanvas offcanvas-end"
+        data-bs-theme="dark"
+      >
+        <div
+          class="offcanvas-header"
+        >
+          <h1
+            class="offcanvas-title"
+          >
+            Teams
+          </h1>
+          <button
+            aria-label="Close"
+            class="btn-close"
+            type="button"
+          />
+        </div>
+        <div
+          class="offcanvas-body"
+        >
+          <div
+            class="btn-group-vertical"
+            role="group"
+          />
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;

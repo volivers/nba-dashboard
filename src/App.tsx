@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header/Header';
+import Dashboard from './components/Dashboard/Dashboard';
+import { Player } from './interfaces/Player';
 
-function App() {
+const App = () => {
+  const [activeTeamId, setActiveTeamId] = useState<number>(2);
+  const [activeGameId, setActiveGameId] = useState<number | undefined>(undefined);
+
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | undefined>(undefined);
+
+  const handleTeamChange = (id: number) => {
+    setActiveTeamId(id);
+    setActiveGameId(undefined);
+    setSelectedPlayer(undefined);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Header activeTeamId={activeTeamId} onTeamChange={handleTeamChange} />
+      <Dashboard
+        activeGameId={activeGameId}
+        activeTeamId={activeTeamId}
+        onClickGame={setActiveGameId}
+        onSelectPlayer={setSelectedPlayer}
+        selectedPlayer={selectedPlayer}
+      />
+    </main>
   );
 }
 
